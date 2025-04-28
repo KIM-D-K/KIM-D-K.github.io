@@ -6,6 +6,7 @@
     <title>개발자 포트폴리오</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
+    <script src="js/portfolio.js"></script>
   </head>
   <body>
     <div class="main-container">
@@ -59,47 +60,55 @@
           <div class="skills">
             <h3 class="skills-title">Skills</h3>
 
-            <div class="Laguages-section">
-              <h3>Laguages</h3>
-              <p class="skill-item">C</p>
-              <p class="skill-item">Java</p>
-              <p class="skill-item">Python</p>
-              <p class="skill-item">JavaScript</p>
-            </div>
+            <div class="skill-groups">
+              <div class="skill-group">
+                <p class="skill-category" onclick="toggleSkill(this)">Languages</p>
+                <div class="Laguages-section">
+                  <p class="skill-item">C</p>
+                  <p class="skill-item">Java</p>
+                  <p class="skill-item">Python</p>
+                  <p class="skill-item">JavaScript</p>
+                </div>
+              </div>
 
-            <div class="back-end-section">
-              <h3>Back-End</h3>
-              <p class="skill-item">Spring Boot</p>
-              <p class="skill-item">JPA</p>
-              <p class="skill-item">JSP</p>
-              <p class="skill-item">Thymeleaf</p>
-              <p class="skill-item">Framework</p>
-              <p class="skill-item">Oracle DB</p>
-              <p class="skill-item">MySQL</p>
-              <p class="skill-item">H2</p>
-            </div>
+              <div class="skill-group">
+                <p class="skill-category" onclick="toggleSkill(this)">Back-End</p>
+                <div class="back-end-section">
+                  <p class="skill-item">Spring Boot</p>
+                  <p class="skill-item">JPA</p>
+                  <p class="skill-item">JSP</p>
+                  <p class="skill-item">Thymeleaf</p>
+                  <p class="skill-item">Framework</p>
+                  <p class="skill-item">Oracle DB</p>
+                  <p class="skill-item">MySQL</p>
+                  <p class="skill-item">H2</p>
+                </div>
+              </div>
 
-            <div class="front-end-section">
-              <h3>Front-End</h3>
-              <p class="skill-item">React</p>
-              <p class="skill-item">Html</p>
-              <p class="skill-item">CSS</p>
-              <p class="skill-item">Tailwind</p>
-            </div>
+              <div class="skill-group">
+                <p class="skill-category" onclick="toggleSkill(this)">Front-End</p>
+                <div class="front-end-section">
+                  <p class="skill-item">React</p>
+                  <p class="skill-item">Html</p>
+                  <p class="skill-item">CSS</p>
+                  <p class="skill-item">Tailwind</p>
+                </div>
+              </div>
 
-            <div class="others-section">
-              <h3>Cloud</h3>
-              <p class="skill-item">AWS</p>
-              <p class="skill-item">Doker</p>
-              <p class="skill-item">Git</p>
+              <div class="skill-group">
+                <p class="skill-category" onclick="toggleSkill(this)">Cloud / DevOps</p>
+                <div class="others-section">
+                  <p class="skill-item">AWS</p>
+                  <p class="skill-item">Doker</p>
+                  <p class="skill-item">Git</p>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="projects">
-            <div class="project-title-container">
-              <h3 class="project-title">Project</h3>
-            </div>
-            <a href="http://15.164.198.57:8081/">
+            <h3 class="project-title">Project</h3>
+            <a href="javascript:void(0);" onclick="openModal('shopnova')">
               <div class="project">
                 <h3>shopnova Project</h3>
                 <img src="img/shopnova.jpg">
@@ -107,6 +116,36 @@
                 <p>Description : Spring Boot, h2를 활용한 쇼핑물 사이트</p>
               </div>
             </a>
+
+            <div id="modal-shopnova" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('shopnova')">&times;</span>
+                <h2>ShopNova Project</h2>
+
+                <div class="slider">
+                  <button class="prev" onclick="prevImage()">&#10094;</button>
+                  <img id="slider-image" src="img/shopnova.jpg" style="width: 100%; max-width: 400px;">
+                  <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+
+                <div class="modal-description">
+                  <p><b>Title : </b> 쇼핑몰 사이트</p>
+                  <p><b>관리자 로그인 : </b>ID : admin@example.com / Password : password123</p>
+                  <p><b>기술 스택 : </b> Spring Boot, H2 DataBase, JavaScript, Java, jpa, External API(Naver Login, KGinicis)</p>
+                  <p><b>개발 기간 : </b>약 1개월</p>
+                  <p><b>담당 역할 :</b></p>
+                  <ul class="role-list">
+                    <li>DataBase 엔티티 설계</li>
+                    <li>페이지 흐름도 설계</li>
+                    <li>결제 페이지 구현</li>
+                    <li>전체적인 오류 코드 해결 및 불필요한 코드 정리</li>
+                  </ul>
+                  <p><b>설명 : </b>관리자가 쇼핑몰 사이트를 직접 운영할 수 있도록 쇼핑몰을 개발했습니다, 사용자와 상품들을 관리자가 컨트롤할 수 있게 구현하였고, 결제까지 하면 매출 내역을 확인할 수 있도록 하였습니다.</p>
+                  <a href="http://15.164.198.57:8081/" target="_blank">프로젝트 링크 바로가기>></a>
+                </div>
+              </div>
+            </div>
+
             <a href="http://13.124.134.115:8082/">
               <div class="project">
                 <h3>Camping Project</h3>
