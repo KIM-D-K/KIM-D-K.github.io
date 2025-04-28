@@ -30,6 +30,24 @@ function nextImage() {
   showImage(currentImageIndex);
 }
 
+const campingImages = [
+  'img/CampingReservation.jpg',
+  'img/CampingReservation1.jpg',
+];
+
+let currentCampingIndex = 0;
+
+function prevImageCamping() {
+  currentCampingIndex = (currentCampingIndex - 1 + campingImages.length) % campingImages.length;
+  document.getElementById('slider-image-camping').src = campingImages[currentCampingIndex];
+}
+
+function nextImageCamping() {
+  currentCampingIndex = (currentCampingIndex + 1) % campingImages.length;
+  document.getElementById('slider-image-camping').src = campingImages[currentCampingIndex];
+}
+
+
 function toggleSkill(element) {
     const skillSection = element.nextElementSibling;
   

@@ -141,12 +141,13 @@
                     <li>전체적인 오류 코드 해결 및 불필요한 코드 정리</li>
                   </ul>
                   <p><b>설명 : </b>관리자가 쇼핑몰 사이트를 직접 운영할 수 있도록 쇼핑몰을 개발했습니다, 사용자와 상품들을 관리자가 컨트롤할 수 있게 구현하였고, 결제까지 하면 매출 내역을 확인할 수 있도록 하였습니다.</p>
+                  <p><b>개선점과 느낀점 : </b>개발기간이 부족하여 불필요한 코드 및 프로젝트의 완성도가 부족했습니다.(데이터베이스, 외부api, 상품관리 등..) 다음에 프로젝트가 있다면 완성도와 가독성을 높혀 더 완벽하게 프로젝트를 진행하고 싶습니다.</p>
                   <a href="http://15.164.198.57:8081/" target="_blank">프로젝트 링크 바로가기>></a>
                 </div>
               </div>
             </div>
 
-            <a href="http://13.124.134.115:8082/">
+            <a href="javascript:void(0);" onclick="openModal('camping')">
               <div class="project">
                 <h3>Camping Project</h3>
                 <img src="img/CampingReservation.jpg">
@@ -154,6 +155,35 @@
                 <p>Description : Spring Boot, Oracle DB를 활용한 캠핑장 예약 사이트</p>
               </div>
             </a>
+
+            <div id="modal-camping" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('camping')">&times;</span>
+                <h2>Camping Reservation Project</h2>
+            
+                <div class="slider">
+                  <button class="prev" onclick="prevImageCamping()">&#10094;</button>
+                  <img id="slider-image-camping" src="img/CampingReservation.jpg" style="width: 100%; max-width: 400px;">
+                  <button class="next" onclick="nextImageCamping()">&#10095;</button>
+                </div>
+            
+                <div class="modal-description">
+                  <p><b>Title : </b> 캠핑장 예약 사이트</p>
+                  <p><b>기술 스택 : </b> Spring Boot, Oracle DB(DBeaver), JavaScript, Java</p>
+                  <p><b>개발 기간 : </b>약 1개월</p>
+                  <p><b>담당 역할 :</b></p>
+                  <ul class="role-list">
+                    <li>캠핑장 예약 기능 구현</li>
+                    <li>로그인 / 로그아웃 기능 구현</li>
+                    <li>일부 CSS 디자인</li>
+                  </ul>
+                  <p><b>설명 : </b>사용자가 캠핑장을 예약할 수 있도록 만든 시스템입니다. 또한 게시글을 추가하여 사용자들이 게시글을 올릴 수 있도록 하였습니다.</p>
+                  <p><b>개선점과 느낀점 : </b>첫 프로젝트를 하면서 많은 기능을 구현하지 못했다는게 너무 아쉬웠습니다. 사용자들이 좀 더 편하게 사용할 수 있도록 개선하고 
+                    싶고, 또한 시간이 부족하여 css의 완성도가 높지 않아 아쉬움이 있습니다. 다음 프로젝트가 있다면 가독성과 사용자들이 이용하기 편한 프로그램을 만들고 싶습니다.</p>
+                  <a href="http://13.124.134.115:8082/" target="_blank">프로젝트 링크 바로가기 >></a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <footer class="personal-information">
