@@ -1,11 +1,3 @@
-let currentShopnovaIndex = 0;
-const shopnovaImages = [
-  "img/shopnova.jpg",
-  "img/shopnova1.jpg",
-  "img/shopnova2.jpg",
-  "img/shopnova3.jpg"
-];
-
 function closeModal(projectName) {
   document.getElementById('modal-' + projectName).style.display = 'none';
 }
@@ -14,6 +6,14 @@ function openModal(projectName) {
   document.getElementById('modal-' + projectName).style.display = 'block';
   showImageShopnova(currentShopnovaIndex);
 }
+
+let currentShopnovaIndex = 0;
+const shopnovaImages = [
+  "img/shopnova.jpg",
+  "img/shopnova1.jpg",
+  "img/shopnova2.jpg",
+  "img/shopnova3.jpg"
+];
 
 function showImageShopnova(index) {
   const sliderImage = document.getElementById('slider-image-shopnova');
@@ -37,17 +37,6 @@ const campingImages = [
   'img/CampingReservation1.jpg',
 ];
 
-/* function prevImageCamping() {
-  currentCampingIndex = (currentCampingIndex - 1 + campingImages.length) % campingImages.length;
-  document.getElementById('slider-image-camping').src = campingImages[currentCampingIndex];
-}
-
-function nextImageCamping() {
-  currentCampingIndex = (currentCampingIndex + 1) % campingImages.length;
-  document.getElementById('slider-image-camping').src = campingImages[currentCampingIndex];
-}
-*/
-
 function showImageCamping(index) {
   const sliderImage = document.getElementById('slider-image-camping');
   sliderImage.src = campingImages[index];
@@ -64,6 +53,26 @@ function nextImageCamping() {
   showImageCamping(currentCampingIndex);
 }
 
+let currentPickMeIndex = 0;
+const pickMeImages = [
+  'img/pickme.jpg'
+];
+
+function showImagePickMe(index) {
+  const sliderImage = document.getElementById('slider-image-pickme');
+  sliderImage.src = pickMeImages[index];
+}
+
+function prevImagePickMe() {
+  currentShopnovaIndex = (currentPickMeIndex - 1 + pickMeImages.length) % pickMeImages.length;
+  showImagePickMe(currentPickMeIndex);
+}
+
+
+function nextImagePickMe() {
+  currentPickMeIndex = (currentPickMeIndex + 1) % pickMeImages.length;
+  showImagePickMe(currentPickMeIndex);
+}
 
 function toggleSkill(element) {
     const skillSection = element.nextElementSibling;
