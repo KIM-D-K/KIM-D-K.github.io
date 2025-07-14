@@ -1,242 +1,277 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>개발자 포트폴리오</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/portfolio.css" />
-    <script src="js/portfolio.js"></script>
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="main-image">
-        <div class="overlay">
-          <h3>Back-End Developer</h3>
-          <span>하나를 알면 열을 아는 개발자 김동규입니다.</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김동규 | 백엔드 포트폴리오</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=SUIT:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'SUIT', sans-serif; }
+  </style>
+
+</head>
+<body class="bg-gradient-to-b from-white via-sky-50 to-white text-gray-800">
+
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">안녕하세요 <span class="text-black">김동규</span>입니다.</h1>
+    <p class="text-lg md:text-xl text-gray-600">하나를 알면 열을 아는 백엔드 개발자입니다.<br/>가독성과 안정성을 중요하게 생각합니다.</p>
+    <div class="mt-10 animate-bounce text-gray-400">▼</div>
+  </section>
+
+  <!-- Profile + Contact + Education -->
+  <section class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="flex justify-center">
+      <img src="img/picture.jpg" alt="Profile Picture" class="rounded-full w-48 h-48 object-cover shadow-md">
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <ul class="text-sm space-y-2">
+        <li>📱 010-4180-6815</li>
+        <li>📧 kowbiopsdrh@gmail.com</li>
+        <li>🌐 <a href="https://github.com/KIM-D-K" class="underline text-blue-500" target="_blank">GitHub</a></li>
+        <li>🏠 인천광역시 서구 건지로 402</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Education</h2>
+      <p class="text-sm">2020.03 ~ 2022.02 인천재능대학교 전자과</p>
+      <p class="text-sm">졸업 | 4.27 / 4.5</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="bg-sky-50 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold text-center mb-14">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+      <!-- Languages -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 transition transform">
+        <h3 class="text-xl font-bold mb-4 text-sky-700 text-center">Languages</h3>
+
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">Java <span class="float-right">45%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-sky-500 h-2 rounded" style="width: 45%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">Python <span class="float-right">25%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-sky-400 h-2 rounded" style="width: 25%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">JavaScript <span class="float-right">20%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-yellow-400 h-2 rounded" style="width: 20%"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm font-semibold mb-1">C <span class="float-right">30%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-emerald-400 h-2 rounded" style="width: 30%"></div>
+          </div>
         </div>
       </div>
 
-      <div class="container">
-        <div class="detail">
-          <div class="my-information">
-            <div class="my-information-title-container">
-              <h3 class="my-information-title">About Me</h3>
-            </div>
-            <div class="my-information-content">
-              <div class="profile-picture">
-                <img src="img/picture.jpg" />
-              </div>
-              <div class="introduction">
-                <span>안녕하세요. 성실함과 끈기를 강점으로 삼아</span>
-                <span>성장하는 개발자 김동규입니다.</span>
-                <br />
-                <span>저는 개발자로서 두 가지 강점을 가지고 있습니다.</span>
-                <br />
-                <h3>첫째, 가독성입니다!</h3>
-                <span>견고한 시스템을 구축하며,</span>
-                <span>사용자가 쉽게 접근할 수 있는 환경을 제공합니다.</span>
-                <br />
-                <h3>둘째, 꼼꼼함과 안정성입니다!</h3>
+      <!-- Back-End -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 transition transform">
+        <h3 class="text-xl font-bold mb-4 text-indigo-700 text-center">Back-End</h3>
 
-                <span>
-                  사용자의 편리성과 시스템의 안정성을 중요하게 생각하며,
-                </span>
-                <span
-                  >새로운 기술을 습득하여 변화하는 환경에 유연하게
-                  대응합니다.</span
-                >
-                <br />
-                <span> 빠르게 변화하는 시대에서 편리함을 극대화하기 위해</span>
-                <span> 개발은 필수라고 생각합니다.</span>
-                <br />
-                <span> 기술 트렌드를 빠르게 습득하고 이를 활용해,</span>
-                <span> 더욱 효율적이고 사용자 친화적인 시스템을</span>
-                <span>구축하는 개발자가 되겠습니다.</span>
-              </div>
-            </div>
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">Spring <span class="float-right">35%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-indigo-400 h-2 rounded" style="width: 35%"></div>
           </div>
-
-          <div class="skills">
-            <h3 class="skills-title">Skills</h3>
-
-            <div class="skill-groups">
-              <div class="skill-group">
-                <p class="skill-category" onclick="toggleSkill(this)">Languages</p>
-                <div class="Laguages-section">
-                  <p class="skill-item">C</p>
-                  <p class="skill-item">Java</p>
-                  <p class="skill-item">Python</p>
-                  <p class="skill-item">JavaScript</p>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <p class="skill-category" onclick="toggleSkill(this)">Back-End</p>
-                <div class="back-end-section">
-                  <p class="skill-item">Spring Boot</p>
-                  <p class="skill-item">Spring MVC</p>
-                  <p class="skill-item">Spring Data JPA</p>
-                  <p class="skill-item">Mybatis</p>
-                  <p class="skill-item">JSP</p>
-                  <p class="skill-item">Thymeleaf</p>
-                  <p class="skill-item">Framework</p>
-                  <p class="skill-item">Oracle DB</p>
-                  <p class="skill-item">MySQL</p>
-                  <p class="skill-item">H2</p>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <p class="skill-category" onclick="toggleSkill(this)">Front-End</p>
-                <div class="front-end-section">
-                  <p class="skill-item">React</p>
-                  <p class="skill-item">Html5</p>
-                  <p class="skill-item">CSS3</p>
-                  <p class="skill-item">Tailwind</p>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <p class="skill-category" onclick="toggleSkill(this)">Cloud / DevOps</p>
-                <div class="others-section">
-                  <p class="skill-item">AWS</p>
-                  <p class="skill-item">Doker</p>
-                  <p class="skill-item">Git</p>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">Spring Boot <span class="float-right">40%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-indigo-500 h-2 rounded" style="width: 40%"></div>
           </div>
-
-          <div class="projects">
-            <h3 class="project-title">Project</h3>
-            <a href="javascript:void(0);" onclick="openModal('shopnova')">
-              <div class="project">
-                <h3>Shopnova Project</h3>
-                <img src="img/shopnova.jpg" style="height: 220px;">
-                <p>Title : 쇼핑몰 사이트</p>
-                <p>Description : Spring Boot, h2를 활용하여 쇼핑물 사이트를 개발했습니다.</p>
-              </div>
-            </a>
-
-            <div id="modal-shopnova" class="modal">
-              <div class="modal-content">
-                <span class="close" onclick="closeModal('shopnova')">&times;</span>
-                <h2>ShopNova Project</h2>
-
-                <div class="slider">
-                  <button class="prev" onclick="prevImageShopnova()">&#10094;</button>
-                  <img id="slider-image-shopnova" src="img/shopnova.jpg">
-                  <button class="next" onclick="nextImageShopnova()">&#10095;</button>
-                </div>
-
-                <div class="modal-description">
-                  <p><b>Title : </b> 쇼핑몰 사이트</p>
-                  <p><b>관리자 로그인 : </b>ID : admin@example.com / Password : password123</p>
-                  <p><b>기술 스택 : </b> Spring Boot, H2 DataBase, JavaScript, Java, jpa, API(Naver Login, KGinicis)</p>
-                  <p><b>개발 기간 : </b>2025년 01월 19일 ~ 2025년 02월 16일</p>
-                  <p><b>담당 역할 :</b></p>
-                  <ul class="role-list">
-                    <li>DataBase 엔티티 설계</li>
-                    <li>프로그램 흐름 설계</li>
-                    <li>결제 페이지 구현</li>
-                    <li>전체적인 팀원 오류 코드 해결 및 불필요한 코드 정리</li>
-                  </ul>
-                  <p><b>설명 : </b>관리자가 쇼핑몰 사이트를 직접 운영할 수 있도록 쇼핑몰을 개발했습니다, 사용자와 상품들을 관리자가 컨트롤할 수 있게 구현하였고, 결제까지 하면 매출 내역을 확인할 수 있도록 하였습니다.</p>
-                  <p><b>개선점과 느낀점 : </b>개발기간이 부족하여 많이 아쉬웠지만, 이전 프로젝트를 진행했을 때 보다 더 많은 기능구현을 하였고 api도 추가하여 구현하였습니다. 실제로 결제 api적용하여 구현하기에는 한계가 있었지만,
-                                            다음 프로젝트가 있다면 더 완벽하게 가독성 있고 깔끔한 프로젝트로 완성하고 싶고, 또한 실무에서 어떻게 일을 하는지 검색하여 다음 프로젝트에는 실무에서 하는 일 처럼 코드를 구현하여,
-                                            로그인 및 여러가지 기능들을 처리할 수 있게 구현하고 싶습니다.</p>
-                  <a href="http://15.164.198.57:8081/" target="_blank">프로젝트 링크 바로가기>></a>
-                </div>
-              </div>
-            </div>
-
-            <a href="javascript:void(0);" onclick="openModal('camping')">
-              <div class="project">
-                <h3>Camping Project</h3>
-                <img src="img/CampingReservation.jpg" style="height: 220px;">
-                <p>Title : 캠핑장 예약 사이트</p>
-                <p>Description : Spring Boot, Oracle DB를 활용하여 캠핑장 예약이 가능한 사이트를 개발했습니다.</p>
-              </div>
-            </a>
-
-            <div id="modal-camping" class="modal">
-              <div class="modal-content">
-                <span class="close" onclick="closeModal('camping')">&times;</span>
-                <h2>Camping Reservation Project</h2>
-            
-                <div class="slider">
-                  <button class="prev" onclick="prevImageCamping()">&#10094;</button>
-                  <img id="slider-image-camping" src="img/CampingReservation.jpg">
-                  <button class="next" onclick="nextImageCamping()">&#10095;</button>
-                </div>
-            
-                <div class="modal-description">
-                  <p><b>Title : </b> 캠핑장 예약 사이트</p>
-                  <p><b>기술 스택 : </b> Spring Boot, Oracle DB</p>
-                  <p><b>개발 기간 : </b>2024년 07월 25일 ~ 2024년 08월 21일</p>
-                  <p><b>담당 역할 :</b></p>
-                  <ul class="role-list">
-                    <li>캠핑장 예약 기능 구현</li>
-                    <li>로그인 / 로그아웃 기능 구현</li>
-                    <li>일부 CSS 디자인</li>
-                  </ul>
-                  <p><b>설명 : </b>사용자가 캠핑장을 예약할 수 있도록 만든 시스템입니다. 또한 게시글을 추가하여 사용자들이 게시글을 올릴 수 있도록 하였습니다.</p>
-                  <p><b>개선점과 느낀점 : </b>첫 프로젝트를 진행하면서 부족한 부분이 많았지만, 이번 프로젝트 계기로 많이 배우며 스스로 많은 성장을 할 수 있었습니다.
-                                            아쉬운 점은 많은 기능을 구현하지 못하였고, 어떻게 동작이 되는지 흐름을 많이 알지 못해 구현하는데 어려움을 느꼈지만,
-                                            다음 프로젝트를 하게 된다면 더 많은 기능구현 및 외부 api등 여러가지를 추가하여 스스로 더욱 더 성장하고 발전하고,
-                                            더 좋은 프로젝트를 만들고 싶습니다.</p>
-                  <a href="http://13.124.134.115:8082/" target="_blank">프로젝트 링크 바로가기 >></a>
-                </div> 
-              </div>
-            </div>
-
-            <a href="javascript:void(0);" onclick="openModal('pickme')">
-              <div class="project">
-                <h3>Pickme project</h3>
-                <img src="img/pickme.jpg" style="height: 230px;">
-                <p>Title : 중고거래 사이트</p>
-                <p>Description : </p>
-              </div>
-            </a>
-  
-            <div id="modal-pickme" class="modal">
-              <div class="modal-content">
-                <span class="close" onclick="closeModal('pickme')">&times;</span>
-                <h2>PickMe Project</h2>
-            
-                <div class="slider">
-                  <button class="prev" onclick="prevImagePickMe()">&#10094;</button>
-                  <img id="slider-image-pickme" src="img/pickme.jpg">
-                  <button class="next" onclick="nextImagePickMe()">&#10095;</button>
-                </div>
-            
-                <div class="modal-description">
-                  <p><b>Title : </b> 중고거래 사이트</p>
-                  <p><b>기술 스택 : </b>Spring Boot (WebSoket), MySQL DB</p>
-                  <p><b>개발 기간 : </b>팀원들과 회의 후 기간을 정할 예정입니다.</p>
-                  <p><b>담당 역할 :</b></p>
-                  <ul class="role-list">
-                    <li>로그인/로그아웃</li>
-                    <li>나머지는 회의 후 정할 예정입니다.</li>
-                  </ul>
-                  <p><b>설명 : </b>회원들 사이에서 중고거래 및 채팅이 되도록 프로그램을 만들 예정입니다. 또한 관리자가 회원들을 관리할 수 있도록 관리자 모드를 넣어 회원들간의 불편함을 없애는 
-                                  프로그램을 만들 예정입니다.</p>
-                  <p><b>개선점과 느낀점 : </b></p>
-                  <a href="" target="_blank">프로젝트 링크 바로가기 >></a>
-                </div> 
-              </div>
-            </div>
+        </div>
+        <div>
+          <p class="text-sm font-semibold mb-1">RESTful API <span class="float-right">20%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-indigo-300 h-2 rounded" style="width: 20%"></div>
           </div>
+        </div>
+      </div>
 
-          <footer class="personal-information">
-            <p>Phone : 010-4180-6815</p>
-            <p>Email : kowbiopsdrh@gmail.com</p>
-            <p>GitHub : <a href="https://github.com/KIM-D-K">https://github.com/KIM-D-K</a></p>
-            <p>Adrres : 인천광역시 서구 건지로 402</p>
-          </footer>
+      <!-- Database -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 transition transform">
+        <h3 class="text-xl font-bold mb-4 text-emerald-700 text-center">Database</h3>
+
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">MySQL <span class="float-right">30%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-emerald-500 h-2 rounded" style="width: 30%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">Oracle <span class="float-right">30%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-emerald-400 h-2 rounded" style="width: 30%"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm font-semibold mb-1">H2 <span class="float-right">25%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-emerald-300 h-2 rounded" style="width: 25%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps -->
+      <div class="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 transition transform">
+        <h3 class="text-xl font-bold mb-4 text-yellow-700 text-center">DevOps</h3>
+
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">Docker <span class="float-right">20%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-yellow-400 h-2 rounded" style="width: 20%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <p class="text-sm font-semibold mb-1">AWS EC2 <span class="float-right">25%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-yellow-500 h-2 rounded" style="width: 25%"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm font-semibold mb-1">Git <span class="float-right">20%</span></p>
+          <div class="w-full h-2 bg-gray-200 rounded">
+            <div class="bg-yellow-300 h-2 rounded" style="width: 20%"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Experience -->
+  <section class="bg-sky-50 py-16">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Experience</h2>
+    <ul class="space-y-6 text-sm text-gray-800 leading-relaxed">
+      <li>
+        <strong>📌 정보처리기사 자격증 대비 (2025.02 ~ 2025.04)</strong><br/>
+        - 정보처리기사 실기 대비 이론 및 실습<br/>
+      </li>
+      <li>
+        <strong>📌 웹개발(백엔드) 프로젝트 (2024.09 ~ 2025.02)</strong><br/>
+        - JAVA, Spring, Spring Boot, SQL 등 웹개발 프로젝트 진행<br/>
+      </li>
+      <li>
+        <strong>📌 웹개발(백엔드) 기초 및 이론 (2024.03 ~ 2024.08)</strong><br/>
+        - JAVA, Spring, Spring Boot, SQL 등 웹개발 백엔드 이론 및 실습<br/>
+      </li>
+      <li>
+        <strong>📌 JAVA, C 기초 언어 (2024.02 ~ 2024.04)</strong><br/>
+        - 프로그래밍 언어(JAVA, C언어)<br/>
+      </li>
+      <li>
+        <strong>📌 프론트엔드 웹개발 (2022.02 ~ 2022.07)</strong><br/>
+        - HTML, CSS, Javascript, React 등 프론트엔드 웹개발 과정<br/>
+      </li>
+      <li>
+        <strong>📌 JAVA 특강 (2022.01 ~ 2022.03)</strong><br/>
+        - 언어 기초 이론 및 문법 사용법 교육. 프로그래밍 실습<br/>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Projects -->
+  <section class="bg-sky-50 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        
+        <!-- shopnova -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer" onclick="openModal('shopnova')">
+          <img src="img/shopnova.jpg" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">ShopNova</h3>
+            <p class="text-sm mb-2">🛒 Spring Boot, H2, JPA</p>
+            <p class="text-sm">쇼핑몰 사이트, 관리자 기능 + 결제 API 연동</p>
+          </div>
+        </div>
+
+        <!-- camping -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer" onclick="openModal('camping')">
+          <img src="img/CampingReservation.jpg" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Camping Reservation</h3>
+            <p class="text-sm mb-2">🏕️ Spring Boot, Oracle DB</p>
+            <p class="text-sm">캠핑장 예약 기능, 로그인/로그아웃 포함</p>
+          </div>
+        </div>
+
+        <!-- chating -->
+        <div class="bg-white shadow-md rounded-xl overflow-hidden hover:scale-105 transition-transform cursor-pointer" onclick="openModal('pickme')">
+          <img src="img/pickme.jpg" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">PickMe</h3>
+            <p class="text-sm mb-2">💬 WebSocket, MySQL</p>
+            <p class="text-sm">실시간 채팅 + 중고거래 플랫폼</p>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+
+    <!-- ShopNova Modal -->
+    <div id="modal-shopnova" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="bg-white rounded-lg max-w-xl w-full p-6 relative">
+        <button class="absolute top-3 right-3 text-gray-500 hover:text-black" onclick="closeModal('shopnova')">&times;</button>
+        <h2 class="text-2xl font-bold mb-4">ShopNova 프로젝트</h2>
+        <ul class="text-sm text-gray-700 leading-relaxed space-y-2">
+          <li><b>📅 개발 기간:</b> 2025.01.19 ~ 2025.02.16</li>
+          <li><b>🛠 사용 기술:</b> Spring Boot, H2 DB, JPA, Naver Login, KG Inicis API</li>
+          <li><b>🧑‍💻 담당 역할:</b> DB 설계, 결제 구현, 전체 코드 정리</li>
+          <li><b>📌 설명:</b> 관리자 로그인으로 쇼핑몰을 운영하고 상품/회원 관리 및 결제 내역을 확인할 수 있도록 구현함.</li>
+          <li><b>💡 느낀 점:</b> 결제 API 연동을 통해 실전 경험을 쌓았고, 협업 시 코드 품질 유지의 중요성을 체감함.</li>
+        </ul>
+        <a href="http://15.164.198.57:8081/" target="_blank" class="inline-block mt-4 text-blue-500 underline">👉 프로젝트 링크</a>
+      </div>
+    </div>
+
+    <!-- Camping Modal -->
+    <div id="modal-camping" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="bg-white rounded-lg max-w-xl w-full p-6 relative">
+        <button class="absolute top-3 right-3 text-gray-500 hover:text-black" onclick="closeModal('camping')">&times;</button>
+        <h2 class="text-2xl font-bold mb-4">Camping Reservation 프로젝트</h2>
+        <ul class="text-sm text-gray-700 leading-relaxed space-y-2">
+          <li><b>📅 개발 기간:</b> 2024.07.25 ~ 2024.08.21</li>
+          <li><b>🛠 사용 기술:</b> Spring Boot, Oracle DB</li>
+          <li><b>🧑‍💻 담당 역할:</b> 예약 기능 구현, 로그인 시스템, 일부 UI 작업</li>
+          <li><b>📌 설명:</b> 캠핑장을 예약할 수 있는 웹사이트 구현. 사용자 게시글 기능 포함.</li>
+          <li><b>💡 느낀 점:</b> 프로젝트를 통해 웹 시스템 흐름 이해도가 높아졌고, 실습을 통해 역량이 향상됨.</li>
+        </ul>
+        <a href="http://13.124.134.115:8082/" target="_blank" class="inline-block mt-4 text-blue-500 underline">👉 프로젝트 링크</a>
+      </div>
+    </div>
+
+    <!-- PickMe Modal -->
+    <div id="modal-pickme" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="bg-white rounded-lg max-w-xl w-full p-6 relative">
+        <button class="absolute top-3 right-3 text-gray-500 hover:text-black" onclick="closeModal('pickme')">&times;</button>
+        <h2 class="text-2xl font-bold mb-4">PickMe 프로젝트</h2>
+        <ul class="text-sm text-gray-700 leading-relaxed space-y-2">
+          <li><b>📅 개발 기간:</b> 예정</li>
+          <li><b>🛠 사용 기술:</b> Spring Boot (WebSocket), MySQL</li>
+          <li><b>🧑‍💻 담당 역할:</b> 로그인/로그아웃 구현 예정, 팀원과 역할 분담 예정</li>
+          <li><b>📌 설명:</b> 회원 간 중고거래 및 채팅 시스템 구현 예정. 관리자 기능도 포함될 예정.</li>
+          <li><b>💡 기대 효과:</b> 실시간 데이터 처리 및 사용자 관리 기능에 대한 경험 향상</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<script src="js/portfolio.js"></script>
+</body>
 </html>
